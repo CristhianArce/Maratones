@@ -1,0 +1,24 @@
+#include <iostream>
+#include<algorithm>
+#define MAX 100001
+using namespace std;
+int main(){
+int t,M,W,x=1,pesos[MAX];
+cin>>t;
+while(x<=t){
+cin>>M>>W;
+for(int i=0;i<M;i++){
+    cin>>pesos[i];
+  }
+sort(pesos,pesos+M);
+int cont=0,ele=0;  
+for(int j=0;j<=M;j++){
+    if(cont<=W){
+       cont=cont+pesos[j];
+        ele++;
+    }
+  }
+x++;
+cout<<ele-1<<endl;
+}
+}

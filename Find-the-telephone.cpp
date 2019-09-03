@@ -1,0 +1,58 @@
+// Example program
+#include <iostream>
+#include <string>
+#define MAX 32
+using namespace std;
+int main(){
+string c;
+int i=0;
+while(cin>>c){
+string r;
+for(i=0;i<=c.size();i++){
+    if(c[i]=='A' ||c[i]=='B' ||c[i]=='C'){
+        r=r+"2";
+    }else{
+        if(c[i]=='D' ||c[i]=='E' ||c[i]=='F'){
+            r=r+"3";
+            }else{
+                if(c[i]=='G' ||c[i]=='H' ||c[i]=='I'){
+                    r=r+"4";
+                    }else{
+                        if(c[i]=='J' ||c[i]=='K' ||c[i]=='L'){
+                             r=r+"5";
+                            }else{
+                                if(c[i]=='M' ||c[i]=='N' ||c[i]=='O'){
+                                     r=r+"6";
+                                    }else{
+                                        if(c[i]=='P' ||c[i]=='Q' ||c[i]=='R' ||c[i]=='S'){
+                                             r=r+"7";
+                                            }else{
+                                                if(c[i]=='T' ||c[i]=='U' ||c[i]=='V'){
+                                                     r=r+"8";
+                                                    }else{
+                                                        if(c[i]=='W' ||c[i]=='X' ||c[i]=='Y' ||c[i]=='Z'){
+                                                             r=r+"9";
+                                                            }else{
+                                                                if(c[i]=='1'){
+                                                                    r=r+"1";
+                                                                }else{
+                                                                    if(c[i]=='-'){
+                                                                        r=r+"-";
+                                                                    }else{
+                                                                        if(c[i]=='0'){
+                                                                        r=r+"0";
+                                                                    }
+                                                                }
+                                                                }
+                                                            }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+    }
+cout<<r<<endl;
+}
+}
